@@ -103,6 +103,7 @@ start:              100X11; AC_SET 1;   //    START
 ## 已知限制
 
 - `GALPAT` 暂不支持 SPI NAND（NAND 按块擦除，BC 反码开销过大，建议改用 `ZeroOne` / `Checkerboard` / `Walking`）
+- 很多芯片并不能直接通过测试，如需要使用，请注意甄别。
 - 仅 Windows；未做代码签名，首次运行可能被 SmartScreen 拦截，点「仍要运行」即可
 - 时序与命令码由使用者按数据手册负责，工具只做地址越界等参数校验，不做电气校验
 - 生成前请核对引脚表与测试机实际通道一致
